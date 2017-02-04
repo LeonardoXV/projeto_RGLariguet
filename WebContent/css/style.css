@@ -1,0 +1,37 @@
+/* Geral */
+body{
+  box-sizing: border-box;
+  background: url('../img/pattern.png');
+}
+
+/* Helpers */
+.colored-icon{
+  color: #ffab00;
+}
+
+.form-section{
+  margin-top: 200px;
+}
+
+/* Materialize Customization */
+
+.input-field .prefix.active {
+  color: #37474f;
+}
+
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #37474f;
+  box-shadow: 0 1px 0 0 #37474f;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #37474f;
+}
+
+.input-field input[type=select]{
+  color: #37474f;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: #37474f; 
+}
