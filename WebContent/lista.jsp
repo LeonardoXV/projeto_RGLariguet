@@ -15,10 +15,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
-
   <body>
-
-
     <div class="row">
       <div class="col s12 m8 l4 offset-m2 offset-l4 form-section ">
         <div class="card z-depth-4">
@@ -47,12 +44,6 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
     <script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="libs/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/form.js"></script>

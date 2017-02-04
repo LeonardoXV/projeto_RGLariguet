@@ -35,11 +35,10 @@
                   <div class="input-field col s12">
                     <select name="categoria">
                       <option value="" disabled selected>Categoria</option>
-                      <option value="Ação">Ação</option>
-                      <option value="Drama">Drama</option>
                       <option value="Técnico">Técnico</option>
-                      <option value="Aventura">Aventura</option>
                       <option value="Romance">Romance</option>
+                      <option value="Ficção">Ficção</option>
+                      <option value="Drama">Drama</option>
                     </select>
                     <label>Categoria do Livro</label>
                   </div>

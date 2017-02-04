@@ -12,6 +12,7 @@ public class DbManager {
 	private Connection conn;
 	private PreparedStatement statement;
 	
+	//Criando conexão com o banco
 	public void getConnection() throws ClassNotFoundException, SQLException{
 
 			Class.forName("com.mysql.jdbc.Driver");
@@ -21,8 +22,9 @@ public class DbManager {
 
 	}
 	
+	//metodo de inserção dos llivros no banco
 	public void insertBook(String titulo, int numero, String categoria) throws SQLException{
-		String sql = "insert into livros (titulo,categoria,qtd_paginas) values (?,?,?)";
+		String sql = "insert into Livro (titulo,categoria,qtd_paginas) values (?,?,?)";
 
 			this.statement = this.conn.prepareStatement(sql);
 			statement.setString(1,titulo);
@@ -32,16 +34,19 @@ public class DbManager {
 			
 	}
 	
+	//metodo de execução de queries
 	private void executeSql(String sql) throws SQLException{
 		
 		this.statement.executeUpdate();
 		
 	}
 	
+	//metodo de fechamento da conexão
 	public void closeConnection() throws SQLException{
 		this.conn.close();
 	}
 	
+	//método de busca de clientes
     public ArrayList<String> selectClientes(String query) throws SQLException{
     	
     	this.statement = this.conn.prepareStatement(query);

@@ -15,7 +15,9 @@ import java.util.ArrayList;
 public class Controle extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
+	
 	private DbManager db = new DbManager();
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		   
 		    if(request.getParameter("btnCadastrar")!=null){
