@@ -16,7 +16,4 @@ function validar(nome){
     alert("Preencha todos os campos e selecione uma categoria!");
     return false;
   }
-  function teste(){
-	  alert("Porra");
-  }
 }
